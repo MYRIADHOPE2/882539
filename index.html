@@ -1,0 +1,379 @@
+<!doctype html>
+<!--Oh. Here we have someone who thinks they're smart-->
+<html>
+<head>
+  <title>Custom OS</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'VT323', monospace;
+      background-color: #111111;
+      color: #0BC5FF;
+      overflow: hidden;
+    }
+    #wrapper {
+      opacity: 1;
+      border-radius: 8px;
+      background-color: #0A1927;
+      width: 80%;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    #user-input {
+      margin-top: 10px;
+    }
+    #drive {
+      color: #FFFFFF;
+    }
+    #command-input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid #0BC5FF;
+      color: #FFFFFF;
+      font-family: 'VT323', monospace;
+      font-size: 16px;
+      padding: 5px;
+      width: calc(100% - 70px); /* Adjust this value according to your design */
+      margin-left: 10px;
+      outline: none;
+    }
+    #command-input:focus {
+      border-color: #0BC5FF;
+    }
+  </style>
+</head>
+<body onload=play()>
+    <audio src="b.mp3" autoplay id="background-music"></audio>
+<div id='wrapper'>
+  <div id='text'>Welcome. Please enter your commands.</div>
+  <div id='user-input'><span id="drive">C:\></span> <input type="text" id="command-input"></div>
+</div>
+
+<script>
+  // Function to handle user input
+  var element = new Image(); 
+  function play(){
+  window.addEventListener("DOMContentLoaded", event => {
+  const audio = document.querySelector("audio");
+  audio.volume = 1;
+  audio.play();
+});
+  }
+const audio2 = new Audio("anon.mp3")
+  function handleInput() {
+    var userInput = document.getElementById("command-input").value.trim();
+    const audio = document.getElementById("background-music");
+      audio.volume = 0.1;
+      audio.play();
+    if (userInput =="help") {
+      // Process user input (You can replace this with your own logic)
+      var output = "Audio Files Encrypted: Permission Level 1. \n Commands include OPEN[File], DECRYPT[], ARCHIVE, HELP, and..."
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      
+      setTimeout(function() {
+        // Process user input (You can replace this with your own logic)
+        var output = "\n ERROR";
+        // Display output
+        document.getElementById("text").innerHTML += output;
+        // Scroll to bottom
+        document.body.scrollTop = document.body.scrollHeight;
+        document.documentElement.scrollTop = document.documentElement.scrollHeight;
+      }, 2000);
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="HELP") {
+      // Process user input (You can replace this with your own logic)
+      var output = "Audio Files Encrypted: Permission Level 1. \n Commands include OPEN[File], DECRYPT[], ARCHIVE, HELP, and..."
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      setTimeout(function() {
+        // Process user input (You can replace this with your own logic)
+        var output = "\n ERROR";
+        // Display output
+        document.getElementById("text").innerHTML += output;
+        // Scroll to bottom
+        document.body.scrollTop = document.body.scrollHeight;
+        document.documentElement.scrollTop = document.documentElement.scrollHeight;
+      }, 2000);
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="ARCHIVE") {
+      // Process user input (You can replace this with your own logic)
+      var output = "You have access to R1, R2 and R3 and Diary. Warning: without higher levels of auuthority, you may not have access to the full thing.";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="ARCHIVE R1") {
+      // Process user input (You can replace this with your own logic)
+      var output = "The clues are already in front of ____. Peel back the image and then use G____ or R_____T. \n His website is intertwined with his name.";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="ARCHIVE R2") {
+      // Process user input (You can replace this with your own logic)
+      var output = "AES: the key can be found upon the man's bio."
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="ARCHIVE R3") {
+      // Process user input (You can replace this with your own logic)
+      var output = "Consider downloading weakpass all-in-one and running [H----at]. It should be enough.";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="DECRYPT") {
+      // Process user input (You can replace this with your own logic)
+      var output = "Decypt what?";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="ARCHIVE DIARY") {
+      // Process user input (You can replace this with your own logic)
+      var diary = "In the forgotten corners of an old attic, a dusty journal lay half-hidden beneath tattered cloth. Its pages whispered tales of moonlit rendezvous and cryptic symbols, each word a breadcrumb leading to a mystery lost in time.";
+;
+      // Display output
+      document.getElementById("text").innerHTML += diary;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="DECRYPT 111141184e1c071508010153411901001f04171700030e530d1641064f5217081308030952540b175904061a1607531f4f061800151c455703040d001c1d491d0b174905160001011100051d561e0c0410000d170009100009411a0a554206410f00001a590c1d071653154c1e051c1253520403014d090b1d57070b0b100945130245411b1600040712451e45100c4f0a4f45161f1143124f07144914000004161f0b1a194f0000") {
+      // Process user input (You can replace this with your own logic)
+      var output = "Our target is the friend right, the friend that was left as a witness? \n Yeah her. \n Head to 13th Alm street.";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="FIND FACE") {
+      // Process user input (You can replace this with your own logic)
+      var output = "Helen Dunmore. Chloe Anver. Michael Palifax. MATCHING";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="OPEN A DREARY PATH") {
+      // Process user input (You can replace this with your own logic)
+      var output = "ERRORERRORERRORERROR";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="DRSPOLSKY") {
+      // Process user input (You can replace this with your own logic)
+      var output = "...";
+      audio2.play();
+      // Display output
+      document.getElementById().innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "Don't ask about him.";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="LOGIN") {
+      // Process user input (You can replace this with your own logic)
+      var output = "Enter Username and Pass.........";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      setTimeout(function() {
+        // Process user input (You can replace this with your own logic)
+        var output = "\n \n ACCESS ON THIS DEVICE IS NOT PERMITTED";
+        // Display output
+        document.getElementById("text").innerHTML += output;
+        // Scroll to bottom
+        document.body.scrollTop = document.body.scrollHeight;
+        document.documentElement.scrollTop = document.documentElement.scrollHeight;
+      }, 2000);
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+
+    }
+    else if (userInput =="FIND LEONARDO KAPP") {
+      // Process user input (You can replace this with your own logic)
+      var output = "Oh... There's no need for that.";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "He is already watching...";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="FIND HAZEL") {
+      // Process user input (You can replace this with your own logic)
+      var output = "ERROR. Do you mean N____?";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="HACK") {
+      // Process user input (You can replace this with your own logic)
+      var output = "Accessing files...";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="FIND JOY") {
+      // Process user input (You can replace this with your own logic)
+      var output = "Location Found... Street: 84, Burwood Highway\nSuburb/City: Burwood East, Melbourne";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="ANSWERS") {
+      // Process user input (You can replace this with your own logic)
+      var output = "It isn't that easy...";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="CHATGPT") {
+      // Process user input (You can replace this with your own logic)
+      var output = "Ah... The bane of our existence...";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="HELLO") {
+      // Process user input (You can replace this with your own logic)
+      var output = "ERROR. SENTIENCE PROGRAM OVERRIDDEN...";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="CIPHERS") {
+      // Process user input (You can replace this with your own logic)
+      var output = "Ciphers used: AES, RSA, Twin Hex, Vignere, Baconate, Avec Qui, Caesar, Bane(12 more)";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="ENDINGS") {
+      // Process user input (You can replace this with your own logic)
+      var output = "18 ENDINGS DETECTED. MORE WILL ARRIVE AS IT PROGRESSES [REDACTED]";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else if (userInput =="KEY") {
+      // Process user input (You can replace this with your own logic)
+      var output = "Password:.";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+    else{
+      // Process user input (You can replace this with your own logic)
+      var output = "<br>Command not recognized: " + userInput + "<br>";
+      // Display output
+      document.getElementById("text").innerHTML += output;
+      // Clear input field
+      document.getElementById("command-input").value = "";
+      // Scroll to bottom
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }
+
+  }
+
+  // Handle Enter key press
+  document.getElementById("command-input").addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+      handleInput();
+    }
+  });
+
+  // Initial focus on input field
+  document.getElementById("command-input").focus();
+</script>
+</body>
+</html>
